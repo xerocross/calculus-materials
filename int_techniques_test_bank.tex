@@ -1,0 +1,280 @@
+\documentclass[10pt]{exam}
+%\usepackage[pdf]{pstricks}
+%\usepackage{pstricks-add}
+%\usepackage{pst-plot,pst-math}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+\usepackage{graphicx, amsmath, amssymb}
+\usepgfplotslibrary{polar}
+
+\title{Integration Techniques Test Bank}
+\date{}
+
+
+
+\tikzset{
+  jumpdot/.style={mark=*,solid},
+  excl/.append style={jumpdot,fill=white},
+  incl/.append style={jumpdot,fill=black},
+}
+
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\question % ans = D
+Compute the antiderivative using integration by parts: $ \int x \cos(x) dx$
+
+
+\begin{choices}
+\choice $x \cos(x) + \sin(x)$
+\choice $\frac{x^2}{2}\sin(x)$
+\choice $x \cos(x) - \sin(x)$
+\choice $x \sin(x) + \cos(x)$
+\choice $x (\sin(x) + \cos(x))$
+\end{choices}
+
+
+\question Compute the antiderivative \label{trigsub}
+
+$$\int \frac{2}{x^3\sqrt{x^2 -1}}dx$$
+assuming $x>1$.
+
+\begin{choices}
+
+
+
+\choice $\sec^{-1}(x) + \frac{\sqrt{x^2-1}}{x}$	
+
+\choice $\tan^{-1}(x) + \frac{\sqrt{x^2-1}}{x^2}$
+
+\choice $\sec^{-1}(x) + \frac{\sqrt{x^2-1}}{x^2}$ %correct
+
+\choice $\frac{\sec^{-1}(x)}{2} + \frac{\sqrt{x^2-1}}{2x^2}$
+
+\choice $\sec^{-1}(x) - \frac{\sqrt{x^2-1}}{x}$	
+
+\end{choices}
+
+\question \label{B} True or false: an \textbf{improper} integral is an integral that does not exist or is $\infty$ or $-\infty$. % false
+
+\fullwidth{Questions \ref{A}  and \ref{C} are based on the following integrals:}
+
+
+
+\begin{enumerate}[I]
+\item $\int_{0}^{1}\frac{1}{\sqrt{x}} dx$
+\item $\int_{1}^{2}\frac{1}{x} dx$
+\item $\int_{-2\pi}^{2\pi}\sin(x) dx$
+\item $\int_{0}^{\infty}\sin(x) dx$
+\end{enumerate}
+
+\question \label{A} Which of these integrals is an \textbf{improper} Riemann integral?
+
+\begin{choices} % B
+\choice I, II and IV
+\choice I and IV
+\choice none are improper
+\choice all are improper
+\choice IV only
+\end{choices}
+
+
+
+
+
+\question \label{C} Which of those integrals is convergent and finite (meaning the integral exists and is a finite number, not $-\infty$ or $\infty$)?
+
+\begin{choices} % E
+\choice II and III
+\choice I only
+\choice all are convergent and finite
+\choice IV only
+\choice I, II, and III
+\end{choices}
+
+
+\question 
+Perform a partial fraction decomposition on the rational function
+$$\frac{3x+1}{(x+3)(x-9)}$$
+and chose the appropriate equation below.
+
+\begin{choices} % E
+\choice $\frac{3x+1}{(x+3)(x-9)} = \frac{A}{x+3}+ \frac{B}{x-9}$
+
+\choice $\frac{3x+1}{(x+3)(x-9)} = \frac{7/3}{x+3}+ \frac{2/3}{x-9}$
+\choice $\frac{3x+1}{(x+3)(x-9)} = \frac{1/12}{x+3}+ \frac{-1/12}{x-9}$
+\choice $\frac{3x+1}{(x+3)(x-9)} = \frac{-1/12}{x+3}+ \frac{1/12}{x-9}$
+\choice $\frac{3x+1}{(x+3)(x-9)} = \frac{2/3}{x+3}+ \frac{7/3}{x-9}$
+\end{choices}
+
+
+\question
+
+Given the partial fraction decomposition
+$$\frac{2x-1}{(2x+6)(3x-1)} = \frac{7/10}{(2x+6)} - \frac{1/20}{(3x-1)}$$
+compute the antiderivative
+$$\int \frac{2x-1}{(x+6)(x-1)} dx.$$
+
+\begin{choices}
+
+\choice $7/20 \ln|2x+6| -1/60 \ln|3x-1|$ % correct
+
+\choice $7/10 \ln|2x+6| -1/20 \ln|3x-1|$
+
+\choice $10/7 \ln|2x+6| -20 \ln|3x-1|$
+\choice $14/10 \ln|2x+6| -3/20 \ln|3x-1|$
+\choice $14 \ln|2x+6| - \ln|3x-1|$
+
+
+	
+\end{choices}
+
+
+
+
+\question Compute the antiderivative $\int \cos^2(x) \sin^3(x) dx$.
+
+
+\begin{choices} % D
+
+\choice $\cos^4(x) - \cos^2(x)$
+\choice $ -\frac{\cos^5(x)}{5} + \frac{\cos^3(x)}{3}$
+\choice $\frac{\cos^3(x)}{3}\frac{\sin^4(x)}{4}$
+\choice $ \frac{\cos^5(x)}{5} - \frac{\cos^3(x)}{3}$
+	
+\choice $\sin^4(x) - \sin^2(x)$
+\end{choices}
+
+
+\question \label{parts} Compute the antiderivative $\int \sin^{-1}(x)dx$.
+
+\begin{choices} % E
+
+\choice $-\sqrt{1-x^2} + x\sin^{-1}(x)$
+\choice $-\cos^{-1}(x)$
+\choice $-\sqrt{1+x^2} + x\sin^{-1}(x)$
+\choice $\sqrt{1+x^2} - x\sin^{-1}(x)$
+	\choice $\sqrt{1-x^2} + x\sin^{-1}(x)$
+\end{choices}
+
+
+\question Choose the answer that best describes the integral 
+$\int_0^\infty \sin(x) dx$.
+
+\begin{choices} % D
+\choice The integral equals 0 because the positive area cancels with the negative area.
+
+\choice The integral  is $\infty$.
+
+\choice The integral  is some finite number between 1 and -1.
+
+\choice The integral is divergent, meaning the limit does not exist.
+
+\choice The integral oscillates between 1 and -1.
+
+
+	
+\end{choices}
+
+
+\question Compute the limit $$\lim_{x\to 0^+} \frac{x}{\ln(x)}.$$
+
+\begin{choices}
+\choice $\infty$
+\choice $0$
+\choice $1$
+\choice does not exist
+\choice $-\infty$
+	
+\end{choices}
+
+
+
+
+\question True or false: $e^x$ grows faster than $x^{10}$ as $x \to \infty$.
+
+
+\question Compute the antiderivative 
+
+$$\int \frac{1}{x^2-6x+14}dx$$
+
+\begin{choices} % A
+\choice $\frac{\sqrt{5}}{5} \arctan(\frac{x-3}{\sqrt{5}})$
+
+\choice $\frac{\sqrt{3}}{3} \arctan(\frac{x-7}{\sqrt{3}})$
+
+\choice $\frac{1}{5}\arctan(\frac{x-3}{5})$
+\choice $\frac{1}{5}\arctan(\frac{x-3}{\sqrt{5}})$
+
+\choice $\frac{1}{3}\arctan(\frac{x-7}{\sqrt{3}})$
+
+
+	
+\end{choices}
+
+
+
+\question True or false: integration is the same thing as anti-differentiating.  
+
+
+\question Let $f(x) =  2x^2$.  From the choices given, choose the number $M$ that is the smallest bound on $|f'(x)|$ in the interval $[0, 5]$, or indicate that $f'(x)$ is not bounded if it is not bounded.
+
+This means choose the number $M$ so that 
+
+$$|f'(x)|\leq M$$
+
+on the interval.
+
+\begin{choices}
+\choice $f'(x)$ is not bounded on the interval.
+\choice 4
+\choice 50
+\choice 20
+\choice 1
+	
+\end{choices}
+
+\question True or false: in typical real world problems, we can approximate an integral using a computer and then see how close we were by computing it exactly.
+
+
+\question \label{errbndq1} Say we want to approximate $\int_0^4 f(x)dx$ using Simpsons rule and we require an approximation that is within $\frac{1}{100}$ of the exact answer.  That is, we require
+
+$$|\text{error}| = \left| \text{exact answer} - \text{our approximation}\right|\leq \frac{1}{100}.$$
+
+An error bound for Simpsons rule is 
+$$|\text{error}| \leq \frac{M(b-a)^5}{180n^4}$$
+where $n$ is the number of subintervals.  \textbf{You may assume $M = 3$.}
+
+From the choices below, choose the smallest number of subintervals $n$ that will give us the desired accuracy using this error bound.
+
+
+\begin{choices}
+\choice approximately 6.4
+\choice 20
+\choice 2
+\choice approximately 10.3	
+\choice 8
+\end{choices}
+
+
+
+
+\question Imagine that the Question \ref{errbndq1} is a real world application.  What is the result if you use \textbf{more} subintervals than the smallest number required?
+
+\begin{choices}
+\choice the approximation will not be accurate enough;
+\choice there is no way to know whether the approximation will be accurate enough or not;
+\choice the approximation will be accurate enough, but we have used more computer time than necessary;
+\choice the approximation is even more accurate and nothing is lost;
+\choice the approximate error will be smaller than the exact error;
+\end{choices}
+ 
+
+
+
+\end{questions}
+
+\end{document}
